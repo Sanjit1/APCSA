@@ -19,6 +19,9 @@ public class Warmups
                 {1,0,1,1},
                 {1,1,1,1},
                 {0,1,1,0}};
+        int[] mergeArray1 = {3,6,9,12,15,18,21};
+        int[] mergeArray2 = {2,4,6,8,10,12,14};
+        
 
         final int MULTTABLE = 1;
         final int STARPLOT = 2;
@@ -41,6 +44,7 @@ public class Warmups
         final int SWAPNUMBERS = 19;
         final int CHECKNEIGHBORS = 20;
         final int GUESSINGGAME = 21;
+        final int MERGESORT = 22;
 
         boolean done;
         double aLeg, bLeg;
@@ -76,6 +80,7 @@ public class Warmups
                 System.out.println("\n\t19 - Swap the Numbers in an Array");
                 System.out.println("\n\t20 - Check for Neighbors");
                 System.out.println("\n\t21 - Guessing Game");
+                System.out.println("\n\t22 - Merge Sort");
 
                 System.out.print("\nWhich warmup would you like to do? ");
 
@@ -190,6 +195,11 @@ public class Warmups
                     break;
                     case GUESSINGGAME:
                     warmup.guessingGame();
+                    break;
+                    case MERGESORT:
+                    warmup.printArray(mergeArray2);
+                    warmup.printArray(mergeArray1);
+                    warmup.printArray(warmup.dunleaMerge(mergeArray1, mergeArray2));
                     break;
                     default:
                     System.out.println("You did not correctly choose a warmup\n");

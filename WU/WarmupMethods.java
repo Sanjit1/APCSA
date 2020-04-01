@@ -452,8 +452,7 @@ public class WarmupMethods
      * Guessing Game
      * 2/5/2020
      */
-    public void guessingGame()
-    {
+    public void guessingGame(){
         System.out.println("Do you want to play the guessing game?");
         if("yes".equals(cons.readToken().toLowerCase())){
             boolean guessed = false;
@@ -478,5 +477,65 @@ public class WarmupMethods
         } else {
             System.out.println("Guessing game done");
         }
+    }
+    public int[] mergeIt(int[] a1, int[] a2){
+        int[] a3 = new int[a1.length+a2.length];
+        boolean notDone = false;
+        int index1 = 0;
+        int index2 = 0;
+        int index3 = 0;
+        while(notDone){
+            if(a1[index1]<a2[index2]){
+                a3[index3] = a1[index1];
+                index1++;
+                index3++;
+            }
+            else if(a1[index1]>a2[index2]){
+                a3[index3] = a2[index2];
+                index2++;
+                index3++;
+            }
+            else if(a1[index1]==a2[index2]){
+                a3[index3] = a1[index1];
+                a3[index3+1] = a2[index1];
+                index1++;
+                index2++;
+                index3+=2;
+            }
+            if(index1==a1.length&&index2<a2.length){
+                for (int i = index3; i< a2.length;i++){
+                    a3[i] = a2[index2];
+                    index2++;
+                }
+                notDone=false;
+            }
+            if(index2==a2.length&&index1<a1.length){
+                for (int i = index3; i< a1.length;i++){
+                    a3[i] = a1[index1];
+                    index1++;
+                }
+                notDone=false;
+            }
+            if (index2==a2.length&&index3==a3.length){
+                notDone=false;
+            }
+        }
+        return a3;
+    }
+    public int[] dunleaMerge(int[] a1, int[] a2){
+        int[] toReturn = new int[a1.length+a2.length];
+        int index3 = 0;
+        int index1 = 0;
+        int index2 = 0;
+        while (index3 < toReturn.length){
+            if((index2 == a2.length) || ((index1 != a1.length) && (a1[index1] <= a2[index2]))){
+                toReturn[index3] = a1[index1++];
+            }
+            else{
+                toReturn[index3] = a2[index2++];
+            }
+            index3++;
+        }
+        return toReturn;
     }
 }

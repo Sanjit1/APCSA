@@ -3,8 +3,6 @@
  * - Lab # 29
  * - Author: @Sanjit1
  * - Version: 1.00000020032032207
- * - Purpose: You spin me round round baby round round
- * - Description: Makes a CircleBug and puts it on a Grid
  * - Methods: main()
  * - Gender: Male
  */
