@@ -1,0 +1,245 @@
+ 
+Display in JSON, Regular, or both ? (j/r/b)b
+"store": [ 
+{ "ID": 3679, "Inventory": 87}, 
+{ "ID": 196, "Inventory": 60}, 
+{ "ID": 17914, "Inventory": 12}, 
+{ "ID": 18618, "Inventory": 64}, 
+{ "ID": 2370, "Inventory": 65}, 
+{ "ID": 584, "Inventory": 85}, 
+{ "ID": 18524, "Inventory": 34}, 
+{ "ID": 12024, "Inventory": 5}, 
+{ "ID": 6992, "Inventory": 76}, 
+{ "ID": 18410, "Inventory": 56}, 
+{ "ID": 9267, "Inventory": 68}, 
+{ "ID": 18995, "Inventory": 56}, 
+{ "ID": 6265, "Inventory": 58}, 
+{ "ID": 6835, "Inventory": 94}, 
+{ "ID": 14151, "Inventory": 82}, 
+{ "ID": 11485, "Inventory": 39}, 
+{ "ID": 15559, "Inventory": 33}, 
+{ "ID": 18465, "Inventory": 27}, 
+{ "ID": 19967, "Inventory": 45}, 
+{ "ID": 13520, "Inventory": 38}, 
+{ "ID": 5529, "Inventory": 11}, 
+{ "ID": 3433, "Inventory": 5}, 
+{ "ID": 17911, "Inventory": 96}, 
+{ "ID": 18181, "Inventory": 60}, 
+{ "ID": 11549, "Inventory": 88}, 
+{ "ID": 14896, "Inventory": 81}, 
+{ "ID": 184, "Inventory": 14}, 
+{ "ID": 4329, "Inventory": 64}, 
+{ "ID": 18871, "Inventory": 69}, 
+{ "ID": 15141, "Inventory": 87}, 
+{ "ID": 11584, "Inventory": 32}, 
+{ "ID": 14088, "Inventory": 92}, 
+{ "ID": 18061, "Inventory": 3}, 
+{ "ID": 206, "Inventory": 31}, 
+{ "ID": 13066, "Inventory": 8}, 
+{ "ID": 19623, "Inventory": 88}, 
+{ "ID": 12705, "Inventory": 14}, 
+{ "ID": 9351, "Inventory": 8}, 
+{ "ID": 17753, "Inventory": 70}, 
+{ "ID": 15917, "Inventory": 51}, 
+{ "ID": 768, "Inventory": 85}, 
+{ "ID": 15814, "Inventory": 60}, 
+{ "ID": 15320, "Inventory": 82}, 
+{ "ID": 8303, "Inventory": 90}, 
+{ "ID": 7282, "Inventory": 73}, 
+{ "ID": 14092, "Inventory": 48}, 
+{ "ID": 10629, "Inventory": 19}, 
+{ "ID": 12917, "Inventory": 63}, 
+{ "ID": 15006, "Inventory": 53}, 
+{ "ID": 12328, "Inventory": 63} 
+]
+Store:
+          Id       Inv
+
+1       3679        87
+2        196        60
+3      17914        12
+4      18618        64
+5       2370        65
+6        584        85
+7      18524        34
+8      12024         5
+9       6992        76
+10     18410        56
+
+11      9267        68
+12     18995        56
+13      6265        58
+14      6835        94
+15     14151        82
+16     11485        39
+17     15559        33
+18     18465        27
+19     19967        45
+20     13520        38
+
+21      5529        11
+22      3433         5
+23     17911        96
+24     18181        60
+25     11549        88
+26     14896        81
+27       184        14
+28      4329        64
+29     18871        69
+30     15141        87
+
+31     11584        32
+32     14088        92
+33     18061         3
+34       206        31
+35     13066         8
+36     19623        88
+37     12705        14
+38      9351         8
+39     17753        70
+40     15917        51
+
+41       768        85
+42     15814        60
+43     15320        82
+44      8303        90
+45      7282        73
+46     14092        48
+47     10629        19
+48     12917        63
+49     15006        53
+50     12328        63
+Display in JSON, Regular, or both ? (j/r/b)b
+"store": [ 
+{ "ID": 184, "Inventory": 14}, 
+{ "ID": 196, "Inventory": 60}, 
+{ "ID": 206, "Inventory": 31}, 
+{ "ID": 584, "Inventory": 85}, 
+{ "ID": 768, "Inventory": 85}, 
+{ "ID": 2370, "Inventory": 65}, 
+{ "ID": 3433, "Inventory": 5}, 
+{ "ID": 3679, "Inventory": 87}, 
+{ "ID": 4329, "Inventory": 64}, 
+{ "ID": 5529, "Inventory": 11}, 
+{ "ID": 6265, "Inventory": 58}, 
+{ "ID": 6835, "Inventory": 94}, 
+{ "ID": 6992, "Inventory": 76}, 
+{ "ID": 7282, "Inventory": 73}, 
+{ "ID": 8303, "Inventory": 90}, 
+{ "ID": 9267, "Inventory": 68}, 
+{ "ID": 9351, "Inventory": 8}, 
+{ "ID": 10629, "Inventory": 19}, 
+{ "ID": 11485, "Inventory": 39}, 
+{ "ID": 11549, "Inventory": 88}, 
+{ "ID": 11584, "Inventory": 32}, 
+{ "ID": 12024, "Inventory": 5}, 
+{ "ID": 12328, "Inventory": 63}, 
+{ "ID": 12705, "Inventory": 14}, 
+{ "ID": 12917, "Inventory": 63}, 
+{ "ID": 13066, "Inventory": 8}, 
+{ "ID": 13520, "Inventory": 38}, 
+{ "ID": 14088, "Inventory": 92}, 
+{ "ID": 14092, "Inventory": 48}, 
+{ "ID": 14151, "Inventory": 82}, 
+{ "ID": 14896, "Inventory": 81}, 
+{ "ID": 15006, "Inventory": 53}, 
+{ "ID": 15141, "Inventory": 87}, 
+{ "ID": 15320, "Inventory": 82}, 
+{ "ID": 15559, "Inventory": 33}, 
+{ "ID": 15814, "Inventory": 60}, 
+{ "ID": 15917, "Inventory": 51}, 
+{ "ID": 17753, "Inventory": 70}, 
+{ "ID": 17911, "Inventory": 96}, 
+{ "ID": 17914, "Inventory": 12}, 
+{ "ID": 18061, "Inventory": 3}, 
+{ "ID": 18181, "Inventory": 60}, 
+{ "ID": 18410, "Inventory": 56}, 
+{ "ID": 18465, "Inventory": 27}, 
+{ "ID": 18524, "Inventory": 34}, 
+{ "ID": 18618, "Inventory": 64}, 
+{ "ID": 18871, "Inventory": 69}, 
+{ "ID": 18995, "Inventory": 56}, 
+{ "ID": 19623, "Inventory": 88}, 
+{ "ID": 19967, "Inventory": 45} 
+]
+Store:
+          Id       Inv
+
+1        184        14
+2        196        60
+3        206        31
+4        584        85
+5        768        85
+6       2370        65
+7       3433         5
+8       3679        87
+9       4329        64
+10      5529        11
+
+11      6265        58
+12      6835        94
+13      6992        76
+14      7282        73
+15      8303        90
+16      9267        68
+17      9351         8
+18     10629        19
+19     11485        39
+20     11549        88
+
+21     11584        32
+22     12024         5
+23     12328        63
+24     12705        14
+25     12917        63
+26     13066         8
+27     13520        38
+28     14088        92
+29     14092        48
+30     14151        82
+
+31     14896        81
+32     15006        53
+33     15141        87
+34     15320        82
+35     15559        33
+36     15814        60
+37     15917        51
+38     17753        70
+39     17911        96
+40     17914        12
+
+41     18061         3
+42     18181        60
+43     18410        56
+44     18465        27
+45     18524        34
+46     18618        64
+47     18871        69
+48     18995        56
+49     19623        88
+50     19967        45
+Testing search algorithm
+
+Enter Id value to search for (-1 to quit) ---> 134
+Id # 134     No such part in stock
+
+Enter Id value to search for (-1 to quit) ---> 420
+Id # 420     No such part in stock
+
+Enter Id value to search for (-1 to quit) ---> 184
+Id # 184     Inventory = 14
+
+Enter Id value to search for (-1 to quit) ---> 15141
+Id # 15141     Inventory = 87
+
+Enter Id value to search for (-1 to quit) ---> 200
+Id # 200     No such part in stock
+
+Enter Id value to search for (-1 to quit) ---> 2006
+Id # 2006     No such part in stock
+
+Enter Id value to search for (-1 to quit) ---> 206
+Id # 206     Inventory = 31
+
+Enter Id value to search for (-1 to quit) ---> -1

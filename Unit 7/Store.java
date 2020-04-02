@@ -129,14 +129,26 @@ public class Store
 
     public void testSearch()
     {
-        doSort();
-        System.out.println("Non-Recrusive");
-        for (int i = 0; i < myStore.length; i++) {
-            System.out.println(Integer.toString(i) + ": " + myStore[i].toString() + " : " + bsearch(new Item(myStore[i].getId(), 0)));
-        }
-        System.out.println("Recrusive");
-        for (int i = 0; i < myStore.length; i++) {
-            System.out.println(Integer.toString(i) + ": " + myStore[i].toString() + " : " + bsearch(new Item(myStore[i].getId(), 0), 0, myStore.length-1));
+        int idToFind;
+        int invReturn;
+        int index;
+        ConsoleIO console = new ConsoleIO();
+
+        System.out.println("Testing search algorithm\n");
+        System.out.print("Enter Id value to search for (-1 to quit) ---> ");
+        idToFind = console.readInt();
+        while (idToFind >= 0)
+        {
+            index = bsearch(new Item(idToFind, 0));
+            // recursive version call
+            // index = bsearch (new Item(idToFind, 0), 0, myStore.length-1);
+            System.out.print("Id # " + idToFind);
+            if (index == -1)
+                System.out.println("     No such part in stock");
+            else
+                System.out.println("     Inventory = " + myStore[index].getInv());
+            System.out.print("\nEnter Id value to search for (-1 to quit) ---> ");
+            idToFind = console.readInt();
         }
     }
 
