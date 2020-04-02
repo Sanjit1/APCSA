@@ -17,15 +17,17 @@ public class Item implements Comparable
         return myInv;
     }
 
-    public int compareTo(Object otherObject){ 
-        return 5;
+    public int compareTo(Object otherObject){
+        Item other = (Item) otherObject;
+        return (myId != other.myId)? (myId-other.myId) : (myInv-other.myInv);
     }
 
     public boolean equals(Object otherObject){ 
-        return true;
+        Item other = (Item) otherObject;
+        return (other.myId == myId) && (other.myInv == myInv);
     }
 
     public String toString(){ 
-        return "d";
+        return "\"ID\": " + Integer.toString(myId) + ", \"Inventory\": " + Integer.toString(myInv);
     }
 }

@@ -174,7 +174,7 @@ public class Sorts
         steps++;
         if (last <= first) return;
         int pivot = a[last];  
-        int i = (first-1); // index of smaller element
+        int i = first-1; // index of smaller element
         for (int j=first; j<last; j++) 
         { 
             steps+=2;
