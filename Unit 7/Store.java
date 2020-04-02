@@ -129,26 +129,14 @@ public class Store
 
     public void testSearch()
     {
-        int idToFind;
-        int invReturn;
-        int index;
-        ConsoleIO console = new ConsoleIO();
-
-        System.out.println("Testing search algorithm\n");
-        System.out.print("Enter Id value to search for (-1 to quit) ---> ");
-        idToFind = console.readInt();
-        while (idToFind >= 0)
-        {
-            index = bsearch(new Item(idToFind, 0));
-            // recursive version call
-            // index = bsearch (new Item(idToFind, 0), 0, myStore.length-1);
-            System.out.print("Id # " + idToFind);
-            if (index == -1)
-                System.out.println("     No such part in stock");
-            else
-                System.out.println("     Inventory = " + myStore[index].getInv());
-            System.out.print("\nEnter Id value to search for (-1 to quit) ---> ");
-            idToFind = console.readInt();
+        doSort();
+        System.out.println("Non-Recrusive");
+        for (int i = 0; i < myStore.length; i++) {
+            System.out.println(Integer.toString(i) + ": " + myStore[i].toString() + " : " + bsearch(new Item(myStore[i].getId(), 0)));
+        }
+        System.out.println("Recrusive");
+        for (int i = 0; i < myStore.length; i++) {
+            System.out.println(Integer.toString(i) + ": " + myStore[i].toString() + " : " + bsearch(new Item(myStore[i].getId(), 0), 0, myStore.length-1));
         }
     }
 
@@ -161,6 +149,26 @@ public class Store
      */
     int bsearch(Item idToSearch)
     {
+        boolean moreToSearch = true;
+        int upper = myStore.length-1;
+        int lower = 0;
+        int id = idToSearch.getId();
+        while(moreToSearch){
+            if (myStore[lower].getId() == id) {
+                return lower;
+            } else if (myStore[upper].getId() == id) {
+                return upper;
+            } else if (myStore[(upper+lower)/2].getId() == id) {
+                return (upper+lower)/2;
+            } else if (myStore[(upper+lower)/2].getId() > id) {
+                upper = (upper+lower)/2;
+            } else if (myStore[(upper+lower)/2].getId() < id) {
+                lower = (upper+lower)/2;
+            } 
+            if ((upper+lower)/2 == lower || (upper+lower)/2 == upper) {
+                moreToSearch = false;
+            }
+        }
         return -1;
     }
 
@@ -175,6 +183,18 @@ public class Store
      */ 
     int bsearch (Item idToSearch, int first, int last)
     {
+        int id = idToSearch.getId();
+        //System.out.println(myStore[last].getId() + " " + myStore[first].getId() + " " + myStore[(first+last)/2].getId() + " " + id);
+        if (myStore[first].getId() == id) {
+            return first;
+        } else if (myStore[last].getId() == id) {
+            return last;
+        }
+        if (myStore[(last+first)/2].getId() >= id) {
+            return bsearch(idToSearch, first, (last+first)/2);
+        } else if (myStore[(last+first)/2].getId() < id) {
+            return bsearch(idToSearch, (last+first)/2, last);
+        }
         return -1;
     }
 
@@ -187,5 +207,6 @@ public class Store
 
         costco.saveFile("sortedFiles50.txt", "regular");
         costco.saveFile("sortedFiles50.json", "json");
+        costco.testSearch();
     }
 }
