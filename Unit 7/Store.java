@@ -5,61 +5,40 @@ public class Store
     private ConsoleIO console;
     public Store(String fileName) { 
         console = new ConsoleIO();
-        System.out.println("\u000C");
         loadFile(fileName);
     }
 
     public void displayStore() {
-        System.out.print("Display in JSON, Regular, or both ? (j/r/b)");
-        String type = console.readLine();
-        if (type.charAt(0) == 'j' || type.charAt(0) == 'J' || type.charAt(0) == 'b' || type.charAt(0) == 'B') {
-            System.out.println("\"store\": [ ");
-            for (int i = 0; i < myStore.length-1; i++) {
-                System.out.println("{ " + myStore[i].toString() + "}, ");
-            }
-            System.out.println("{ " + myStore[myStore.length-1].toString() + "} ");
-            System.out.println("]");
-        }
-        if (type.charAt(0) == 'r' || type.charAt(0) == 'R' || type.charAt(0) == 'b' || type.charAt(0) == 'B') {
-            System.out.println("Store:");
-            System.out.println("          Id       Inv");
-            for (int i = 0; i < myStore.length; i++) {
-                if (i%10 == 0) 
-                    System.out.println();
-                System.out.print(Integer.toString(i+1));
-                for (int spaces = 0; spaces < 12 - Integer.toString(i+1).length() - Integer.toString(myStore[i].getId()).length(); spaces++)
-                    System.out.print(" ");
-                System.out.print(myStore[i].getId());
-                for (int spaces = 0; spaces < 10 - Integer.toString(myStore[i].getInv()).length(); spaces++) 
-                    System.out.print(" ");
-                System.out.println(myStore[i].getInv());
-            }
+        System.out.println("Store:");
+        System.out.println("          Id       Inv");
+        for (int i = 0; i < myStore.length; i++) {
+            if (i%10 == 0) 
+                System.out.println();
+            System.out.print(Integer.toString(i+1));
+            for (int spaces = 0; spaces < 12 - Integer.toString(i+1).length() - Integer.toString(myStore[i].getId()).length(); spaces++)
+                System.out.print(" ");
+            System.out.print(myStore[i].getId());
+            for (int spaces = 0; spaces < 10 - Integer.toString(myStore[i].getInv()).length(); spaces++) 
+                System.out.print(" ");
+            System.out.println(myStore[i].getInv());
         }
     }
 
-    public void saveFile(String filename, String type) {
+    public void saveFile(String filename) {
         FileOutput out = new FileOutput(filename);
-        if (type.charAt(0) == 'j' || type.charAt(0) == 'J' ) {
-            out.println("\"store\": [ ");
-            for (int i = 0; i < myStore.length-1; i++) {
-                out.println("{ " + myStore[i].toString() + "}, ");
-            }
-            out.println("{ " + myStore[myStore.length-1].toString() + "} ");
-            out.println("]");
-        } else {
-            out.println("Store:");
-            out.println("          Id       Inv");
-            for (int i = 0; i < myStore.length; i++) {
-                if (i%10 == 0) 
-                    out.println();
-                out.print(Integer.toString(i+1));
-                for (int spaces = 0; spaces < 12 - Integer.toString(i).length() - Integer.toString(myStore[i].getId()).length(); spaces++)
-                    out.print(" ");
-                out.print(myStore[i].getId());
-                for (int spaces = 0; spaces < 10 - Integer.toString(myStore[i].getInv()).length(); spaces++) 
-                    out.print(" ");
-                out.println(myStore[i].getInv());
-            }
+        out.println("Store:");
+        out.println("          Id       Inv");
+        for (int i = 0; i < myStore.length; i++) {
+            if (i%10 == 0) 
+                out.println();
+            out.print(Integer.toString(i+1));
+            for (int spaces = 0; spaces < 12 - Integer.toString(i).length() - Integer.toString(myStore[i].getId()).length(); spaces++)
+                out.print(" ");
+            out.print(myStore[i].getId());
+            for (int spaces = 0; spaces < 10 - Integer.toString(myStore[i].getInv()).length(); spaces++) 
+                out.print(" ");
+            out.println(myStore[i].getInv());
+
         }
         out.close();
     }
@@ -140,8 +119,6 @@ public class Store
         while (idToFind >= 0)
         {
             index = bsearch(new Item(idToFind, 0));
-            // recursive version call
-            // index = bsearch (new Item(idToFind, 0), 0, myStore.length-1);
             System.out.print("Id # " + idToFind);
             if (index == -1)
                 System.out.println("     No such part in stock");
@@ -196,7 +173,6 @@ public class Store
     int bsearch (Item idToSearch, int first, int last)
     {
         int id = idToSearch.getId();
-        //System.out.println(myStore[last].getId() + " " + myStore[first].getId() + " " + myStore[(first+last)/2].getId() + " " + id);
         if (myStore[first].getId() == id) {
             return first;
         } else if (myStore[last].getId() == id) {
@@ -211,14 +187,13 @@ public class Store
     }
 
     public static void main(String[] args) {
-        Store costco = new Store("file50.txt");
-        costco.displayStore();
+        Store myStore = new Store("file50.txt");
+        myStore.displayStore();
 
-        costco.doSort();
-        costco.displayStore();
+        myStore.doSort();
+        myStore.displayStore();
 
-        costco.saveFile("sortedFiles50.txt", "regular");
-        costco.saveFile("sortedFiles50.json", "json");
-        costco.testSearch();
+        myStore.saveFile("sortedFiles50.txt");
+        myStore.testSearch();
     }
 }
