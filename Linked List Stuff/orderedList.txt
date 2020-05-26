@@ -1,0 +1,315 @@
+ Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print ordered list
+(3) Search list
+(4) Delete from list
+(5) Clear entire list
+(6) Count nodes in list
+(7) Print list backwards
+(8) Clear Screen
+(Q) Quit
+
+Choice ---> 2
+
+
+The tree printed in order
+
+
+Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print ordered list
+(3) Search list
+(4) Delete from list
+(5) Clear entire list
+(6) Count nodes in list
+(7) Print list backwards
+(8) Clear Screen
+(Q) Quit
+
+Choice ---> 1
+
+Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print ordered list
+(3) Search list
+(4) Delete from list
+(5) Clear entire list
+(6) Count nodes in list
+(7) Print list backwards
+(8) Clear Screen
+(Q) Quit
+
+Choice ---> 2
+
+
+The tree printed in order
+
+Id=184,Inv=14 
+Id=196,Inv=60 
+Id=206,Inv=31 
+Id=2370,Inv=65 
+Id=7282,Inv=73 
+Id=8303,Inv=90 
+Id=12328,Inv=63 
+Id=12705,Inv=14 
+Id=13066,Inv=8 
+Id=14088,Inv=92 
+Id=15320,Inv=82 
+Id=15814,Inv=60 
+Id=15917,Inv=51 
+Id=17911,Inv=96 
+Id=18061,Inv=3 
+Id=18410,Inv=56 
+Id=18465,Inv=27 
+Id=18618,Inv=64 
+Id=18871,Inv=69 
+Id=19967,Inv=45 
+
+Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print ordered list
+(3) Search list
+(4) Delete from list
+(5) Clear entire list
+(6) Count nodes in list
+(7) Print list backwards
+(8) Clear Screen
+(Q) Quit
+
+Choice ---> 3
+
+Testing search algorithm
+
+Enter Id value to search for (-1 to quit) --> 184
+Id=184,Inv=14
+
+Enter Id value to search for (-1 to quit) --> 196
+Id=196,Inv=60
+
+Enter Id value to search for (-1 to quit) --> 42123
+Id = 42123  No such part in stock
+
+Enter Id value to search for (-1 to quit) --> 19967
+Id=19967,Inv=45
+
+Enter Id value to search for (-1 to quit) --> 123
+Id = 123  No such part in stock
+
+Enter Id value to search for (-1 to quit) --> 321
+Id = 321  No such part in stock
+
+Enter Id value to search for (-1 to quit) --> -1
+Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print ordered list
+(3) Search list
+(4) Delete from list
+(5) Clear entire list
+(6) Count nodes in list
+(7) Print list backwards
+(8) Clear Screen
+(Q) Quit
+
+Choice ---> 4
+
+Testing delete algorithm
+
+Enter Id value to delete (-1 to quit) --> 196
+     Id #196 was deleted
+
+Enter Id value to delete (-1 to quit) --> 321
+Id# 321  No such part in stock
+
+Enter Id value to delete (-1 to quit) --> 7282
+     Id #7282 was deleted
+
+Enter Id value to delete (-1 to quit) --> -1
+Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print ordered list
+(3) Search list
+(4) Delete from list
+(5) Clear entire list
+(6) Count nodes in list
+(7) Print list backwards
+(8) Clear Screen
+(Q) Quit
+
+Choice ---> 2
+
+
+The tree printed in order
+
+Id=184,Inv=14 
+Id=206,Inv=31 
+Id=2370,Inv=65 
+Id=8303,Inv=90 
+Id=12328,Inv=63 
+Id=12705,Inv=14 
+Id=13066,Inv=8 
+Id=14088,Inv=92 
+Id=15320,Inv=82 
+Id=15814,Inv=60 
+Id=15917,Inv=51 
+Id=17911,Inv=96 
+Id=18061,Inv=3 
+Id=18410,Inv=56 
+Id=18465,Inv=27 
+Id=18618,Inv=64 
+Id=18871,Inv=69 
+Id=19967,Inv=45 
+
+Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print ordered list
+(3) Search list
+(4) Delete from list
+(5) Clear entire list
+(6) Count nodes in list
+(7) Print list backwards
+(8) Clear Screen
+(Q) Quit
+
+Choice ---> 5
+
+Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print ordered list
+(3) Search list
+(4) Delete from list
+(5) Clear entire list
+(6) Count nodes in list
+(7) Print list backwards
+(8) Clear Screen
+(Q) Quit
+
+Choice ---> 2
+
+
+The tree printed in order
+
+
+Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print ordered list
+(3) Search list
+(4) Delete from list
+(5) Clear entire list
+(6) Count nodes in list
+(7) Print list backwards
+(8) Clear Screen
+(Q) Quit
+
+Choice ---> 1
+
+Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print ordered list
+(3) Search list
+(4) Delete from list
+(5) Clear entire list
+(6) Count nodes in list
+(7) Print list backwards
+(8) Clear Screen
+(Q) Quit
+
+Choice ---> 2
+
+
+The tree printed in order
+
+Id=184,Inv=14 
+Id=196,Inv=60 
+Id=206,Inv=31 
+Id=2370,Inv=65 
+Id=7282,Inv=73 
+Id=8303,Inv=90 
+Id=12328,Inv=63 
+Id=12705,Inv=14 
+Id=13066,Inv=8 
+Id=14088,Inv=92 
+Id=15320,Inv=82 
+Id=15814,Inv=60 
+Id=15917,Inv=51 
+Id=17911,Inv=96 
+Id=18061,Inv=3 
+Id=18410,Inv=56 
+Id=18465,Inv=27 
+Id=18618,Inv=64 
+Id=18871,Inv=69 
+Id=19967,Inv=45 
+
+Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print ordered list
+(3) Search list
+(4) Delete from list
+(5) Clear entire list
+(6) Count nodes in list
+(7) Print list backwards
+(8) Clear Screen
+(Q) Quit
+
+Choice ---> 6
+
+Number of nodes = 20
+
+Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print ordered list
+(3) Search list
+(4) Delete from list
+(5) Clear entire list
+(6) Count nodes in list
+(7) Print list backwards
+(8) Clear Screen
+(Q) Quit
+
+Choice ---> 7
+
+Id=19967,Inv=45 
+Id=18871,Inv=69 
+Id=18618,Inv=64 
+Id=18465,Inv=27 
+Id=18410,Inv=56 
+Id=18061,Inv=3 
+Id=17911,Inv=96 
+Id=15917,Inv=51 
+Id=15814,Inv=60 
+Id=15320,Inv=82 
+Id=14088,Inv=92 
+Id=13066,Inv=8 
+Id=12705,Inv=14 
+Id=12328,Inv=63 
+Id=8303,Inv=90 
+Id=7282,Inv=73 
+Id=2370,Inv=65 
+Id=206,Inv=31 
+Id=196,Inv=60 
+Id=184,Inv=14 
+Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print ordered list
+(3) Search list
+(4) Delete from list
+(5) Clear entire list
+(6) Count nodes in list
+(7) Print list backwards
+(8) Clear Screen
+(Q) Quit
+
+Choice ---> QT
+

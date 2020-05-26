@@ -109,7 +109,7 @@ public class OrderedList
                     break;
                     case '2' :
                     System.out.println();
-                    System.out.println("The tree printed inorder\n");
+                    System.out.println("The tree printed in order\n");
                     head.printList();
                     System.out.println();
                     break;
