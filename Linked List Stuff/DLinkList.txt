@@ -1,0 +1,145 @@
+ q
+
+DoubleList.main({ });
+Doubly-Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print list forward
+(3) Print list backwards
+(4) Count nodes in list
+(5) Delete from list
+(Q) Quit
+
+Choice ---> 1
+
+Doubly-Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print list forward
+(3) Print list backwards
+(4) Count nodes in list
+(5) Delete from list
+(Q) Quit
+
+Choice ---> 2
+
+
+The tree printed inorder
+
+Id=184,Inv=14 
+Id=196,Inv=60 
+Id=2370,Inv=65 
+Id=8303,Inv=90 
+Id=12328,Inv=63 
+Id=13066,Inv=8 
+Id=15917,Inv=51 
+Id=18465,Inv=27 
+Id=18618,Inv=64 
+Id=19967,Inv=45 
+
+Doubly-Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print list forward
+(3) Print list backwards
+(4) Count nodes in list
+(5) Delete from list
+(Q) Quit
+
+Choice ---> 3
+
+Id=19967,Inv=45 
+Id=18618,Inv=64 
+Id=18465,Inv=27 
+Id=15917,Inv=51 
+Id=13066,Inv=8 
+Id=12328,Inv=63 
+Id=8303,Inv=90 
+Id=2370,Inv=65 
+Id=196,Inv=60 
+Id=184,Inv=14 
+Doubly-Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print list forward
+(3) Print list backwards
+(4) Count nodes in list
+(5) Delete from list
+(Q) Quit
+
+Choice ---> 4
+
+Number of nodes = 10
+
+Doubly-Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print list forward
+(3) Print list backwards
+(4) Count nodes in list
+(5) Delete from list
+(Q) Quit
+
+Choice ---> 5
+
+Testing delete algorithm
+
+Enter Id value to delete (-1 to quit) --> 2370
+     Id #2370 was deleted
+
+Enter Id value to delete (-1 to quit) --> -1
+Doubly-Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print list forward
+(3) Print list backwards
+(4) Count nodes in list
+(5) Delete from list
+(Q) Quit
+
+Choice ---> 2
+
+
+The tree printed inorder
+
+Id=184,Inv=14 
+Id=196,Inv=60 
+Id=8303,Inv=90 
+Id=12328,Inv=63 
+Id=13066,Inv=8 
+Id=15917,Inv=51 
+Id=18465,Inv=27 
+Id=18618,Inv=64 
+Id=19967,Inv=45 
+
+Doubly-Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print list forward
+(3) Print list backwards
+(4) Count nodes in list
+(5) Delete from list
+(Q) Quit
+
+Choice ---> 3
+
+Id=19967,Inv=45 
+Id=18618,Inv=64 
+Id=18465,Inv=27 
+Id=15917,Inv=51 
+Id=13066,Inv=8 
+Id=12328,Inv=63 
+Id=8303,Inv=90 
+Id=196,Inv=60 
+Id=184,Inv=14 
+Doubly-Linked List algorithm menu
+
+(1) Read data from disk
+(2) Print list forward
+(3) Print list backwards
+(4) Count nodes in list
+(5) Delete from list
+(Q) Quit
+
+Choice ---> q
+
