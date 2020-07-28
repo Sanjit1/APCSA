@@ -38,25 +38,29 @@ public class DoublyLinkedList<E> {
 
     public E remove(E element) {
         Comparable<E> elemC = (Comparable<E>) element;
-        DListNode<E> next = new DListNode(null, first, null);
-        while(next.getNext() != next && elemC.compareTo((E)next.getNext().getValue()) !=0) {
-            next = next.getNext();
-        }
-        if (next.getNext()==null) {
-            return null;
+        DListNode<E> next = first;
+        if(elemC.compareTo((E)next.getValue()) != 0){
+            while(next != null && elemC.compareTo((E)next.getValue()) != 0) {
+                next = next.getNext();
+            }
+            if (next==null) {
+                return null;
+            } else {
+                if(next.getPrevious() != null)
+                    next.getPrevious().setNext(next.getNext());
+                if(next.getNext() != null)
+                    next.getNext().setPrevious(next);
+                return (E)next.getValue();
+            }
         } else {
-            DListNode<E> gc = next.getNext();
-            next.setNext(next.getNext().getNext());
-            next.getNext().getNext().setPrevious(next);
-            gc = null;
-            return (E)next.getNext().getValue();
+            first = new DListNode<E>((E)next.getNext().getValue(), next.getNext().getNext(), null);
+            return (E)next.getValue();
         }
     }
 
     public void clear() {
         first = null;
         last = null;
-        //could not figure out garbage collection.
     }
 
     public void addFirst(E value) {
@@ -83,6 +87,11 @@ public class DoublyLinkedList<E> {
             next = next.getNext();
         }
         return next.getValue();
+    }
+
+    public void set(int pos, E value) {
+        remove(get(pos));
+        insertAtPos(pos, value);
     }
 
     public void insertAtPos(int pos, E value) {
